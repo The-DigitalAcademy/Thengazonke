@@ -1,0 +1,10 @@
+version: '3'
+services:
+  node:
+    image: my-node-app
+    ports:
+      - "3000:3000"
+  angular:
+    image: my-angular-app
+    ports:
+      - "4200:4200"
