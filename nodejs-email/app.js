@@ -4,6 +4,11 @@ const app = express();
 const port = 3100;
 require("dotenv").config();
 const bodyParser = require("body-parser");
+const cors = require('cors');
+
+
+
+app.use(cors())
 
 app.use(bodyParser.json());
 app.use(
